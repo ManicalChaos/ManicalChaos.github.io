@@ -32,20 +32,21 @@ html {
 }
 
 #timerBgImg {
-
-  width: 35em;
+  max-width: 80vw; /* Adjusts size based on screen width */
+  width: 35em; /* Default size */
   image-rendering: pixelated;
-  transform: translate(-50%, 0);
-  /* Corrects the offset */
+  transform: translateX(-50%);
 }
 
 #timer {
   position: relative;
-  font-size: 50px;
+  font-size: min(7vw, 2.5em); 
   text-align: center;
   font-family: "minecraftFont";
-  transform: translate(-50%, -275%);
+  transform: translate(-50%, -300%);
+  white-space: nowrap; /* Prevents text wrapping */
 }
+
 
 #curseforgelink {
 
