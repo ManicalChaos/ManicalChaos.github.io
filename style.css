@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@font-face {
+
+  font-family: "minecraftFont";
+  src: url("fonts/Minecraft.ttf");
+
+}
+
+
+
+
+.mySlides {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+#countdowntimerdiv {
+
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  z-index: 2;
+
+
+}
+
+#timerBgImg {
+
+  width: 35em;
+  image-rendering: pixelated;
+  transform: translate(-50%, 0);
+  /* Corrects the offset */
+}
+
+#timer {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  font-family: "minecraftFont";
+  transform: translate(-50%, -275%);
+}
+
+#curseforgelink {
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1%;
+  text-shadow:
+    1px 1px 2px red,
+    0 0 1em blue,
+    0 0 0.2em blue;
+  font-family: "minecraftFont";
+
+}
+
+
+
+#background {
+
+  background-image: url(img/dirtbg.jpg);
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+#leftButton {
+  image-rendering: pixelated;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  z-index: 2;
+}
+
+#rightButton {
+
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  z-index: 2;
+
+}
