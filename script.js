@@ -2,7 +2,7 @@ isItTheDate = false;
 
 backgroundNum = 0;
 
-var countDownDate = new Date("Mar 30, 2025 12:00:00").getTime();
+var countDownDate = new Date("April 4, 2025 14:00:00").getTime();
 
 window.addEventListener("load", onload())
 

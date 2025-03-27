@@ -14,12 +14,7 @@ html {
 
 
 
-.mySlides {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 1;
-}
+
 
 #countdowntimerdiv {
 
@@ -32,19 +27,22 @@ html {
 }
 
 #timerBgImg {
-  max-width: 80vw; /* Adjusts size based on screen width */
-  width: 35em; /* Default size */
+  max-width: 80vw;
+  /* Adjusts size based on screen width */
+  width: 35em;
+  /* Default size */
   image-rendering: pixelated;
   transform: translateX(-50%);
 }
 
 #timer {
   position: relative;
-  font-size: min(7vw, 2.5em); 
+  font-size: min(7vw, 2.5em);
   text-align: center;
   font-family: "minecraftFont";
   transform: translate(-50%, -300%);
-  white-space: nowrap; /* Prevents text wrapping */
+  white-space: nowrap;
+  /* Prevents text wrapping */
 }
 
 
@@ -52,9 +50,9 @@ html {
 
   position: absolute;
   left: 50%;
-  top: 50%;
+  bottom: 5%;
   z-index: 2;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
   background-color: white;
   padding: 1%;
   text-shadow:
@@ -73,22 +71,37 @@ html {
   position: absolute;
   max-width: 100%;
   height: auto;
-  background-size: cover;
+  background-size: screem;
 }
+
+
+
+.mySlides {
+  max-width: 100%;
+  height: auto;
+  position: sticky;
+  top: 20%;
+  z-index: 1;
+}
+
 
 #leftButton {
   image-rendering: pixelated;
   position: absolute;
-  left: 5%;
-  top: 50%;
+  left: 10%;
+  top: 90%;
   z-index: 2;
+  max-width: 300%;
+  transform: scale(2);
 }
 
 #rightButton {
 
+  image-rendering: pixelated;
   position: absolute;
-  right: 5%;
-  top: 50%;
+  right: 10%;
+  top: 90%;
   z-index: 2;
-
+  max-width: 100%;
+  transform: scale(2);
 }
